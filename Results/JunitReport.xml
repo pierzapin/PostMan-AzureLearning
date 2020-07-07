@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite id="0" hostname="https://restfulbooker.azurewebsites.net" package="Get Bookings" name="Get All Bookings" tests="3" failures="0" errors="0" timestamp="2020-07-07T16:30:37.254" time="0.068">
+    <properties>
+      <property name="rb_url" value="https://restfulbooker.azurewebsites.net/"/>
+    </properties>
+    <testcase classname="Get Bookings / Get All Bookings" name="Status code is 200" time="0.023"/>
+    <testcase classname="Get Bookings / Get All Bookings" name="Responses are booking ids" time="0.023"/>
+    <testcase classname="Get Bookings / Get All Bookings" name="Response is not empty" time="0.023"/>
+  </testsuite>
+  <testsuite id="0" hostname="https://restfulbooker.azurewebsites.net" package="Get Bookings" name="Get All Bookings" tests="3" failures="0" errors="0" timestamp="2020-07-07T16:30:37.322" time="0.068">
+    <properties>
+      <property name="rb_url" value="https://restfulbooker.azurewebsites.net/"/>
+    </properties>
+    <testcase classname="Get Bookings / Get All Bookings" name="Status code is 200" time="0.023"/>
+    <testcase classname="Get Bookings / Get All Bookings" name="Responses are booking ids" time="0.023"/>
+    <testcase classname="Get Bookings / Get All Bookings" name="Response is not empty" time="0.023"/>
+  </testsuite>
+  <testsuite id="1" hostname="https://restfulbooker.azurewebsites.net" package="Get Bookings" name="Search By First Name" tests="4" failures="0" errors="0" timestamp="2020-07-07T16:30:37.390" time="0.089">
+    <properties>
+      <property name="rb_url" value="https://restfulbooker.azurewebsites.net/"/>
+    </properties>
+    <testcase classname="Get Bookings / Search By First Name" name="Status code is 200" time="0.022"/>
+    <testcase classname="Get Bookings / Search By First Name" name="Responses are booking ids" time="0.022"/>
+    <testcase classname="Get Bookings / Search By First Name" name="Response is not empty" time="0.022"/>
+    <testcase classname="Get Bookings / Search By First Name" name="Expected booking id is in the returned array" time="0.022"/>
+  </testsuite>
+  <testsuite id="1" hostname="https://restfulbooker.azurewebsites.net" package="Get Bookings" name="Search By First Name" tests="4" failures="0" errors="0" timestamp="2020-07-07T16:30:37.479" time="0.089">
+    <properties>
+      <property name="rb_url" value="https://restfulbooker.azurewebsites.net/"/>
+    </properties>
+    <testcase classname="Get Bookings / Search By First Name" name="Status code is 200" time="0.022"/>
+    <testcase classname="Get Bookings / Search By First Name" name="Responses are booking ids" time="0.022"/>
+    <testcase classname="Get Bookings / Search By First Name" name="Response is not empty" time="0.022"/>
+    <testcase classname="Get Bookings / Search By First Name" name="Expected booking id is in the returned array" time="0.022"/>
+  </testsuite>
+  <testsuite id="2" hostname="https://restfulbooker.azurewebsites.net" package="Get Bookings" name="Search By Last Name" tests="4" failures="0" errors="0" timestamp="2020-07-07T16:30:37.568" time="0.067">
+    <properties>
+      <property name="rb_url" value="https://restfulbooker.azurewebsites.net/"/>
+    </properties>
+    <testcase classname="Get Bookings / Search By Last Name" name="Status code is 200" time="0.017"/>
+    <testcase classname="Get Bookings / Search By Last Name" name="Responses are booking ids" time="0.017"/>
+    <testcase classname="Get Bookings / Search By Last Name" name="Response is not empty" time="0.017"/>
+    <testcase classname="Get Bookings / Search By Last Name" name="Expected booking id is in the returned array" time="0.017"/>
+  </testsuite>
+  <testsuite id="2" hostname="https://restfulbooker.azurewebsites.net" package="Get Bookings" name="Search By Last Name" tests="4" failures="0" errors="0" timestamp="2020-07-07T16:30:37.635" time="0.067">
+    <properties>
+      <property name="rb_url" value="https://restfulbooker.azurewebsites.net/"/>
+    </properties>
+    <testcase classname="Get Bookings / Search By Last Name" name="Status code is 200" time="0.017"/>
+    <testcase classname="Get Bookings / Search By Last Name" name="Responses are booking ids" time="0.017"/>
+    <testcase classname="Get Bookings / Search By Last Name" name="Response is not empty" time="0.017"/>
+    <testcase classname="Get Bookings / Search By Last Name" name="Expected booking id is in the returned array" time="0.017"/>
+  </testsuite>
+  <testsuite id="3" hostname="https://restfulbooker.azurewebsites.net" package="Get Bookings" name="Search By First and Last Name" tests="4" failures="0" errors="0" timestamp="2020-07-07T16:30:37.702" time="0.063">
+    <properties>
+      <property name="rb_url" value="https://restfulbooker.azurewebsites.net/"/>
+    </properties>
+    <testcase classname="Get Bookings / Search By First and Last Name" name="Status code is 200" time="0.016"/>
+    <testcase classname="Get Bookings / Search By First and Last Name" name="Responses are booking ids" time="0.016"/>
+    <testcase classname="Get Bookings / Search By First and Last Name" name="Response is not empty" time="0.016"/>
+    <testcase classname="Get Bookings / Search By First and Last Name" name="Expected booking id is in the returned array" time="0.016"/>
+  </testsuite>
+  <testsuite id="3" hostname="https://restfulbooker.azurewebsites.net" package="Get Bookings" name="Search By First and Last Name" tests="4" failures="0" errors="0" timestamp="2020-07-07T16:30:37.765" time="0.063">
+    <properties>
+      <property name="rb_url" value="https://restfulbooker.azurewebsites.net/"/>
+    </properties>
+    <testcase classname="Get Bookings / Search By First and Last Name" name="Status code is 200" time="0.016"/>
+    <testcase classname="Get Bookings / Search By First and Last Name" name="Responses are booking ids" time="0.016"/>
+    <testcase classname="Get Bookings / Search By First and Last Name" name="Response is not empty" time="0.016"/>
+    <testcase classname="Get Bookings / Search By First and Last Name" name="Expected booking id is in the returned array" time="0.016"/>
+  </testsuite>
+  <testsuite id="4" hostname="https://restfulbooker.azurewebsites.net" package="Get Bookings" name="Search By Checkin" tests="4" failures="0" errors="0" timestamp="2020-07-07T16:30:37.828" time="0.077">
+    <properties>
+      <property name="rb_url" value="https://restfulbooker.azurewebsites.net/"/>
+    </properties>
+    <testcase classname="Get Bookings / Search By Checkin" name="Status code is 200" time="0.019"/>
+    <testcase classname="Get Bookings / Search By Checkin" name="Responses are booking ids" time="0.019"/>
+    <testcase classname="Get Bookings / Search By Checkin" name="Response is not empty" time="0.019"/>
+    <testcase classname="Get Bookings / Search By Checkin" name="Expected booking id is in the returned array" time="0.019">
+      <failure type="AssertionError" message="expected [ 12, 13, 14, 11 ] to include 15">
+        <![CDATA[AssertionError: expected [ 12, 13, 14, 11 ] to include 15
+   at Object.eval sandbox-script.js:2:5)]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite id="4" hostname="https://restfulbooker.azurewebsites.net" package="Get Bookings" name="Search By Checkin" tests="4" failures="0" errors="0" timestamp="2020-07-07T16:30:37.905" time="0.077">
+    <properties>
+      <property name="rb_url" value="https://restfulbooker.azurewebsites.net/"/>
+    </properties>
+    <testcase classname="Get Bookings / Search By Checkin" name="Status code is 200" time="0.019"/>
+    <testcase classname="Get Bookings / Search By Checkin" name="Responses are booking ids" time="0.019"/>
+    <testcase classname="Get Bookings / Search By Checkin" name="Response is not empty" time="0.019"/>
+    <testcase classname="Get Bookings / Search By Checkin" name="Expected booking id is in the returned array" time="0.019">
+      <failure type="AssertionError" message="expected [ 12, 13, 14, 11 ] to include 15">
+        <![CDATA[AssertionError: expected [ 12, 13, 14, 11 ] to include 15
+   at Object.eval sandbox-script.js:2:5)]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite id="5" hostname="https://restfulbooker.azurewebsites.net" package="Get Bookings" name="Search By Checkout" tests="4" failures="0" errors="0" timestamp="2020-07-07T16:30:37.982" time="0.064">
+    <properties>
+      <property name="rb_url" value="https://restfulbooker.azurewebsites.net/"/>
+    </properties>
+    <testcase classname="Get Bookings / Search By Checkout" name="Status code is 200" time="0.016"/>
+    <testcase classname="Get Bookings / Search By Checkout" name="Responses are booking ids" time="0.016"/>
+    <testcase classname="Get Bookings / Search By Checkout" name="Response is not empty" time="0.016"/>
+    <testcase classname="Get Bookings / Search By Checkout" name="Expected booking id is in the returned array" time="0.016"/>
+  </testsuite>
+  <testsuite id="5" hostname="https://restfulbooker.azurewebsites.net" package="Get Bookings" name="Search By Checkout" tests="4" failures="0" errors="0" timestamp="2020-07-07T16:30:38.046" time="0.064">
+    <properties>
+      <property name="rb_url" value="https://restfulbooker.azurewebsites.net/"/>
+    </properties>
+    <testcase classname="Get Bookings / Search By Checkout" name="Status code is 200" time="0.016"/>
+    <testcase classname="Get Bookings / Search By Checkout" name="Responses are booking ids" time="0.016"/>
+    <testcase classname="Get Bookings / Search By Checkout" name="Response is not empty" time="0.016"/>
+    <testcase classname="Get Bookings / Search By Checkout" name="Expected booking id is in the returned array" time="0.016"/>
+  </testsuite>
+  <testsuite id="6" hostname="https://restfulbooker.azurewebsites.net" package="Get Bookings" name="Empty Search" tests="2" failures="0" errors="0" timestamp="2020-07-07T16:30:38.110" time="0.065">
+    <properties>
+      <property name="rb_url" value="https://restfulbooker.azurewebsites.net/"/>
+    </properties>
+    <testcase classname="Get Bookings / Empty Search" name="Status code is 200" time="0.033"/>
+    <testcase classname="Get Bookings / Empty Search" name="Response is empty" time="0.033"/>
+  </testsuite>
+  <testsuite id="6" hostname="https://restfulbooker.azurewebsites.net" package="Get Bookings" name="Empty Search" tests="2" failures="0" errors="0" timestamp="2020-07-07T16:30:38.175" time="0.065">
+    <properties>
+      <property name="rb_url" value="https://restfulbooker.azurewebsites.net/"/>
+    </properties>
+    <testcase classname="Get Bookings / Empty Search" name="Status code is 200" time="0.033"/>
+    <testcase classname="Get Bookings / Empty Search" name="Response is empty" time="0.033"/>
+  </testsuite>
+  <testsuite id="7" hostname="https://restfulbooker.azurewebsites.net" package="Get Booking by ID" name="Existing ID" tests="2" failures="0" errors="0" timestamp="2020-07-07T16:30:38.240" time="0.067">
+    <properties>
+      <property name="rb_url" value="https://restfulbooker.azurewebsites.net/"/>
+    </properties>
+    <testcase classname="Get Booking by ID / Existing ID" name="Status code is 200" time="0.034"/>
+    <testcase classname="Get Booking by ID / Existing ID" name="Expected booking is returned" time="0.034"/>
+  </testsuite>
+  <testsuite id="7" hostname="https://restfulbooker.azurewebsites.net" package="Get Booking by ID" name="Existing ID" tests="2" failures="0" errors="0" timestamp="2020-07-07T16:30:38.307" time="0.067">
+    <properties>
+      <property name="rb_url" value="https://restfulbooker.azurewebsites.net/"/>
+    </properties>
+    <testcase classname="Get Booking by ID / Existing ID" name="Status code is 200" time="0.034"/>
+    <testcase classname="Get Booking by ID / Existing ID" name="Expected booking is returned" time="0.034"/>
+  </testsuite>
+  <testsuite id="8" hostname="https://restfulbooker.azurewebsites.net" package="Get Booking by ID" name="Non-Existent ID" tests="1" failures="0" errors="0" timestamp="2020-07-07T16:30:38.374" time="0.068">
+    <properties>
+      <property name="rb_url" value="https://restfulbooker.azurewebsites.net/"/>
+    </properties>
+    <testcase classname="Get Booking by ID / Non-Existent ID" name="Status code is 404" time="0.068"/>
+  </testsuite>
+  <testsuite id="9" hostname="https://restfulbooker.azurewebsites.net" package="Create Booking" name="Valid Create" tests="2" failures="0" errors="0" timestamp="2020-07-07T16:30:38.442" time="0.060">
+    <properties>
+      <property name="rb_url" value="https://restfulbooker.azurewebsites.net/"/>
+    </properties>
+    <testcase classname="Create Booking / Valid Create" name="Status code is 200" time="0.030"/>
+    <testcase classname="Create Booking / Valid Create" name="Response booking is correct" time="0.030"/>
+  </testsuite>
+  <testsuite id="10" hostname="https://restfulbooker.azurewebsites.net" package="Create Booking" name="First name is null" tests="1" failures="0" errors="0" timestamp="2020-07-07T16:30:38.502" time="0.064">
+    <properties>
+      <property name="rb_url" value="https://restfulbooker.azurewebsites.net/"/>
+    </properties>
+    <testcase classname="Create Booking / First name is null" name="Create fails" time="0.064"/>
+  </testsuite>
+  <testsuite id="11" hostname="https://restfulbooker.azurewebsites.net" package="Modify Booking" name="Valid Update" tests="8" failures="0" errors="0" timestamp="2020-07-07T16:30:38.566" time="0.073">
+    <properties>
+      <property name="rb_url" value="https://restfulbooker.azurewebsites.net/"/>
+    </properties>
+    <testcase classname="Modify Booking / Valid Update" name="Status code is 200" time="0.009"/>
+    <testcase classname="Modify Booking / Valid Update" name="Response firstname is correct" time="0.009"/>
+    <testcase classname="Modify Booking / Valid Update" name="Response lastname is correct" time="0.009"/>
+    <testcase classname="Modify Booking / Valid Update" name="Response totalprice is correct" time="0.009"/>
+    <testcase classname="Modify Booking / Valid Update" name="Response depositpaid is correct" time="0.009"/>
+    <testcase classname="Modify Booking / Valid Update" name="Response checkin is correct" time="0.009"/>
+    <testcase classname="Modify Booking / Valid Update" name="Response checkout is correct" time="0.009"/>
+    <testcase classname="Modify Booking / Valid Update" name="Response additionalneeds is correct" time="0.009">
+      <failure type="AssertionError" message="unexpected additionalneeds: expected 'null' to deeply equal null">
+        <![CDATA[AssertionError: unexpected additionalneeds: expected 'null' to deeply equal null
+   at Object.eval sandbox-script.js:8:12)]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite id="11" hostname="https://restfulbooker.azurewebsites.net" package="Modify Booking" name="Valid Update" tests="8" failures="0" errors="0" timestamp="2020-07-07T16:30:38.639" time="0.073">
+    <properties>
+      <property name="rb_url" value="https://restfulbooker.azurewebsites.net/"/>
+    </properties>
+    <testcase classname="Modify Booking / Valid Update" name="Status code is 200" time="0.009"/>
+    <testcase classname="Modify Booking / Valid Update" name="Response firstname is correct" time="0.009"/>
+    <testcase classname="Modify Booking / Valid Update" name="Response lastname is correct" time="0.009"/>
+    <testcase classname="Modify Booking / Valid Update" name="Response totalprice is correct" time="0.009"/>
+    <testcase classname="Modify Booking / Valid Update" name="Response depositpaid is correct" time="0.009"/>
+    <testcase classname="Modify Booking / Valid Update" name="Response checkin is correct" time="0.009"/>
+    <testcase classname="Modify Booking / Valid Update" name="Response checkout is correct" time="0.009"/>
+    <testcase classname="Modify Booking / Valid Update" name="Response additionalneeds is correct" time="0.009">
+      <failure type="AssertionError" message="unexpected additionalneeds: expected 'null' to deeply equal null">
+        <![CDATA[AssertionError: unexpected additionalneeds: expected 'null' to deeply equal null
+   at Object.eval sandbox-script.js:8:12)]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite id="12" hostname="https://restfulbooker.azurewebsites.net" package="Modify Booking" name="Update Invalid Name" tests="2" failures="0" errors="0" timestamp="2020-07-07T16:30:38.712" time="0.069">
+    <properties>
+      <property name="rb_url" value="https://restfulbooker.azurewebsites.net/"/>
+    </properties>
+    <testcase classname="Modify Booking / Update Invalid Name" name="Update fails" time="0.035"/>
+    <testcase classname="Modify Booking / Update Invalid Name" name="Booking is unchanged" time="0.035"/>
+  </testsuite>
+  <testsuite id="12" hostname="https://restfulbooker.azurewebsites.net" package="Modify Booking" name="Update Invalid Name" tests="2" failures="0" errors="0" timestamp="2020-07-07T16:30:38.781" time="0.069">
+    <properties>
+      <property name="rb_url" value="https://restfulbooker.azurewebsites.net/"/>
+    </properties>
+    <testcase classname="Modify Booking / Update Invalid Name" name="Update fails" time="0.035"/>
+    <testcase classname="Modify Booking / Update Invalid Name" name="Booking is unchanged" time="0.035"/>
+  </testsuite>
+  <testsuite id="12" hostname="https://restfulbooker.azurewebsites.net" package="Modify Booking" name="Update Invalid Name" tests="2" failures="0" errors="0" timestamp="2020-07-07T16:30:38.850" time="0.069">
+    <properties>
+      <property name="rb_url" value="https://restfulbooker.azurewebsites.net/"/>
+    </properties>
+    <testcase classname="Modify Booking / Update Invalid Name" name="Update fails" time="0.035"/>
+    <testcase classname="Modify Booking / Update Invalid Name" name="Booking is unchanged" time="0.035"/>
+  </testsuite>
+  <testsuite id="13" hostname="https://restfulbooker.azurewebsites.net" package="Modify Booking" name="Update Invalid Date" tests="2" failures="0" errors="0" timestamp="2020-07-07T16:30:38.919" time="0.058">
+    <properties>
+      <property name="rb_url" value="https://restfulbooker.azurewebsites.net/"/>
+    </properties>
+    <testcase classname="Modify Booking / Update Invalid Date" name="Update fails" time="0.029">
+      <failure type="AssertionError" message="expected response code to not be 2XX">
+        <![CDATA[AssertionError: expected response code to not be 2XX
+   at Object.eval sandbox-script.js:1:14)]]>
+      </failure>
+    </testcase>
+    <testcase classname="Modify Booking / Update Invalid Date" name="Booking is unchanged" time="0.029">
+      <failure type="AssertionError" message="expected 'Invalid date' to include 'Samantha'">
+        <![CDATA[AssertionError: expected 'Invalid date' to include 'Samantha'
+   at Object.eval sandbox-script.js:2:14)]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite id="13" hostname="https://restfulbooker.azurewebsites.net" package="Modify Booking" name="Update Invalid Date" tests="2" failures="0" errors="0" timestamp="2020-07-07T16:30:38.977" time="0.058">
+    <properties>
+      <property name="rb_url" value="https://restfulbooker.azurewebsites.net/"/>
+    </properties>
+    <testcase classname="Modify Booking / Update Invalid Date" name="Update fails" time="0.029">
+      <failure type="AssertionError" message="expected response code to not be 2XX">
+        <![CDATA[AssertionError: expected response code to not be 2XX
+   at Object.eval sandbox-script.js:1:14)]]>
+      </failure>
+    </testcase>
+    <testcase classname="Modify Booking / Update Invalid Date" name="Booking is unchanged" time="0.029">
+      <failure type="AssertionError" message="expected 'Invalid date' to include 'Samantha'">
+        <![CDATA[AssertionError: expected 'Invalid date' to include 'Samantha'
+   at Object.eval sandbox-script.js:2:14)]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite id="13" hostname="https://restfulbooker.azurewebsites.net" package="Modify Booking" name="Update Invalid Date" tests="2" failures="0" errors="0" timestamp="2020-07-07T16:30:39.035" time="0.058">
+    <properties>
+      <property name="rb_url" value="https://restfulbooker.azurewebsites.net/"/>
+    </properties>
+    <testcase classname="Modify Booking / Update Invalid Date" name="Update fails" time="0.029">
+      <failure type="AssertionError" message="expected response code to not be 2XX">
+        <![CDATA[AssertionError: expected response code to not be 2XX
+   at Object.eval sandbox-script.js:1:14)]]>
+      </failure>
+    </testcase>
+    <testcase classname="Modify Booking / Update Invalid Date" name="Booking is unchanged" time="0.029">
+      <failure type="AssertionError" message="expected 'Invalid date' to include 'Samantha'">
+        <![CDATA[AssertionError: expected 'Invalid date' to include 'Samantha'
+   at Object.eval sandbox-script.js:2:14)]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite id="14" hostname="https://restfulbooker.azurewebsites.net" package="Patch Modify Booking" name="Partial Update Booking" tests="3" failures="0" errors="0" timestamp="2020-07-07T16:30:39.093" time="0.063">
+    <properties>
+      <property name="rb_url" value="https://restfulbooker.azurewebsites.net/"/>
+    </properties>
+    <testcase classname="Patch Modify Booking / Partial Update Booking" name="Status code is 200" time="0.021"/>
+    <testcase classname="Patch Modify Booking / Partial Update Booking" name="Response firstname is correct" time="0.021"/>
+    <testcase classname="Patch Modify Booking / Partial Update Booking" name="Response lastname is correct" time="0.021"/>
+  </testsuite>
+  <testsuite id="14" hostname="https://restfulbooker.azurewebsites.net" package="Patch Modify Booking" name="Partial Update Booking" tests="3" failures="0" errors="0" timestamp="2020-07-07T16:30:39.156" time="0.063">
+    <properties>
+      <property name="rb_url" value="https://restfulbooker.azurewebsites.net/"/>
+    </properties>
+    <testcase classname="Patch Modify Booking / Partial Update Booking" name="Status code is 200" time="0.021"/>
+    <testcase classname="Patch Modify Booking / Partial Update Booking" name="Response firstname is correct" time="0.021"/>
+    <testcase classname="Patch Modify Booking / Partial Update Booking" name="Response lastname is correct" time="0.021"/>
+  </testsuite>
+  <testsuite id="15" hostname="https://restfulbooker.azurewebsites.net" package="Patch Modify Booking" name="Invalid Patch" tests="2" failures="0" errors="0" timestamp="2020-07-07T16:30:39.219" time="0.057">
+    <properties>
+      <property name="rb_url" value="https://restfulbooker.azurewebsites.net/"/>
+    </properties>
+    <testcase classname="Patch Modify Booking / Invalid Patch" name="Patch fails" time="0.029">
+      <failure type="AssertionError" message="expected response code to not be 2XX">
+        <![CDATA[AssertionError: expected response code to not be 2XX
+   at Object.eval sandbox-script.js:1:16)]]>
+      </failure>
+    </testcase>
+    <testcase classname="Patch Modify Booking / Invalid Patch" name="Booking is unchanged" time="0.029">
+      <failure type="AssertionError" message="expected '{&quot;firstname&quot;:null,&quot;lastname&quot;:&quot;Martin&quot;,&quot;totalprice&quot;:153,&quot;depositpaid&quot;:true,&quot;bookingdates&quot;:{&quot;checkin&quot;:&quot;2020-11-12&quot;,&quot;checkout&quot;:&quot;2020-11-17&quot;},&quot;additionalneeds&quot;:&quot;early checkin&quot;}' to include 'Hannah'">
+        <![CDATA[AssertionError: expected '{"firstname":null,"lastname":"Martin","totalprice":153,"depositpaid":true,"bookingdates":{"checkin":"2020-11-12","checkout":"2020-11-17"},"additionalneeds":"early checkin"}' to include 'Hannah'
+   at Object.eval sandbox-script.js:2:16)]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite id="15" hostname="https://restfulbooker.azurewebsites.net" package="Patch Modify Booking" name="Invalid Patch" tests="2" failures="0" errors="0" timestamp="2020-07-07T16:30:39.276" time="0.057">
+    <properties>
+      <property name="rb_url" value="https://restfulbooker.azurewebsites.net/"/>
+    </properties>
+    <testcase classname="Patch Modify Booking / Invalid Patch" name="Patch fails" time="0.029">
+      <failure type="AssertionError" message="expected response code to not be 2XX">
+        <![CDATA[AssertionError: expected response code to not be 2XX
+   at Object.eval sandbox-script.js:1:16)]]>
+      </failure>
+    </testcase>
+    <testcase classname="Patch Modify Booking / Invalid Patch" name="Booking is unchanged" time="0.029">
+      <failure type="AssertionError" message="expected '{&quot;firstname&quot;:null,&quot;lastname&quot;:&quot;Martin&quot;,&quot;totalprice&quot;:153,&quot;depositpaid&quot;:true,&quot;bookingdates&quot;:{&quot;checkin&quot;:&quot;2020-11-12&quot;,&quot;checkout&quot;:&quot;2020-11-17&quot;},&quot;additionalneeds&quot;:&quot;early checkin&quot;}' to include 'Hannah'">
+        <![CDATA[AssertionError: expected '{"firstname":null,"lastname":"Martin","totalprice":153,"depositpaid":true,"bookingdates":{"checkin":"2020-11-12","checkout":"2020-11-17"},"additionalneeds":"early checkin"}' to include 'Hannah'
+   at Object.eval sandbox-script.js:2:16)]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite id="15" hostname="https://restfulbooker.azurewebsites.net" package="Patch Modify Booking" name="Invalid Patch" tests="2" failures="0" errors="0" timestamp="2020-07-07T16:30:39.333" time="0.057">
+    <properties>
+      <property name="rb_url" value="https://restfulbooker.azurewebsites.net/"/>
+    </properties>
+    <testcase classname="Patch Modify Booking / Invalid Patch" name="Patch fails" time="0.029">
+      <failure type="AssertionError" message="expected response code to not be 2XX">
+        <![CDATA[AssertionError: expected response code to not be 2XX
+   at Object.eval sandbox-script.js:1:16)]]>
+      </failure>
+    </testcase>
+    <testcase classname="Patch Modify Booking / Invalid Patch" name="Booking is unchanged" time="0.029">
+      <failure type="AssertionError" message="expected '{&quot;firstname&quot;:null,&quot;lastname&quot;:&quot;Martin&quot;,&quot;totalprice&quot;:153,&quot;depositpaid&quot;:true,&quot;bookingdates&quot;:{&quot;checkin&quot;:&quot;2020-11-12&quot;,&quot;checkout&quot;:&quot;2020-11-17&quot;},&quot;additionalneeds&quot;:&quot;early checkin&quot;}' to include 'Hannah'">
+        <![CDATA[AssertionError: expected '{"firstname":null,"lastname":"Martin","totalprice":153,"depositpaid":true,"bookingdates":{"checkin":"2020-11-12","checkout":"2020-11-17"},"additionalneeds":"early checkin"}' to include 'Hannah'
+   at Object.eval sandbox-script.js:2:16)]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite id="16" hostname="https://restfulbooker.azurewebsites.net" package="" name="Ping" tests="1" failures="0" errors="0" timestamp="2020-07-07T16:30:39.390" time="0.061">
+    <properties>
+      <property name="rb_url" value="https://restfulbooker.azurewebsites.net/"/>
+    </properties>
+    <testcase classname=" / Ping" name="Ping is successful" time="0.061"/>
+  </testsuite>
+  <testsuite id="17" hostname="https://restfulbooker.azurewebsites.net" package="" name="Auth" tests="2" failures="0" errors="0" timestamp="2020-07-07T16:30:39.451" time="0.059">
+    <properties>
+      <property name="rb_url" value="https://restfulbooker.azurewebsites.net/"/>
+    </properties>
+    <testcase classname=" / Auth" name="Status code is 200" time="0.029"/>
+    <testcase classname=" / Auth" name="Response contains token" time="0.029"/>
+  </testsuite>
+  <testsuite id="18" hostname="https://restfulbooker.azurewebsites.net" package="" name="Delete Booking" tests="2" failures="0" errors="0" timestamp="2020-07-07T16:30:39.510" time="0.065">
+    <properties>
+      <property name="rb_url" value="https://restfulbooker.azurewebsites.net/"/>
+    </properties>
+    <testcase classname=" / Delete Booking" name="Status code is 200" time="0.033">
+      <failure type="AssertionError" message="expected response to have status code 200 but got 201">
+        <![CDATA[AssertionError: expected response to have status code 200 but got 201
+   at Object.eval sandbox-script.js:1:19)]]>
+      </failure>
+    </testcase>
+    <testcase classname=" / Delete Booking" name="Booking no longer exists" time="0.033"/>
+  </testsuite>
+  <testsuite id="18" hostname="https://restfulbooker.azurewebsites.net" package="" name="Delete Booking" tests="2" failures="0" errors="0" timestamp="2020-07-07T16:30:39.575" time="0.065">
+    <properties>
+      <property name="rb_url" value="https://restfulbooker.azurewebsites.net/"/>
+    </properties>
+    <testcase classname=" / Delete Booking" name="Status code is 200" time="0.033">
+      <failure type="AssertionError" message="expected response to have status code 200 but got 201">
+        <![CDATA[AssertionError: expected response to have status code 200 but got 201
+   at Object.eval sandbox-script.js:1:19)]]>
+      </failure>
+    </testcase>
+    <testcase classname=" / Delete Booking" name="Booking no longer exists" time="0.033"/>
+  </testsuite>
+  <testsuite id="18" hostname="https://restfulbooker.azurewebsites.net" package="" name="Delete Booking" tests="2" failures="0" errors="0" timestamp="2020-07-07T16:30:39.640" time="0.065">
+    <properties>
+      <property name="rb_url" value="https://restfulbooker.azurewebsites.net/"/>
+    </properties>
+    <testcase classname=" / Delete Booking" name="Status code is 200" time="0.033">
+      <failure type="AssertionError" message="expected response to have status code 200 but got 201">
+        <![CDATA[AssertionError: expected response to have status code 200 but got 201
+   at Object.eval sandbox-script.js:1:19)]]>
+      </failure>
+    </testcase>
+    <testcase classname=" / Delete Booking" name="Booking no longer exists" time="0.033"/>
+  </testsuite>
+</testsuites>
