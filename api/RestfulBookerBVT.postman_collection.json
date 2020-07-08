@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "5d1ba4ae-d097-4a2b-a251-801c44b01f7a",
+		"_postman_id": "ca4ebc2b-e075-4532-9022-2da2409aef26",
 		"name": "Restful Booker BVT",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -14,7 +14,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "c34de8f7-c523-471a-b74b-b065d0aa980e",
+								"id": "0f6e5469-8ef0-4792-bc6b-6ec0d587de43",
 								"exec": [
 									"",
 									"var jsonData = pm.response.json();",
@@ -34,10 +34,6 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": ""
-						},
 						"url": {
 							"raw": "{{rb_url}}/booking",
 							"host": [
@@ -56,7 +52,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "f90c42c7-9bf8-42c4-942d-e4ae5cbabef1",
+								"id": "92c9847e-94fc-4faa-8414-2329d4ab7b33",
 								"exec": [
 									""
 								],
@@ -66,7 +62,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "74cc0f85-d34c-4e5c-b9f9-41dd90417f83",
+								"id": "5d19e085-c27c-42de-8bc1-9ecf7b25fa68",
 								"exec": [
 									"",
 									"var jsonData = pm.response.json();",
@@ -93,10 +89,6 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": ""
-						},
 						"url": {
 							"raw": "{{rb_url}}/booking?firstname={{firstname}}",
 							"host": [
@@ -121,7 +113,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "f90c42c7-9bf8-42c4-942d-e4ae5cbabef1",
+								"id": "466baecb-1dc9-4230-88ec-ecaa0b963080",
 								"exec": [
 									""
 								],
@@ -131,7 +123,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "74cc0f85-d34c-4e5c-b9f9-41dd90417f83",
+								"id": "2368e5ea-998f-4296-ac9d-80d5cd998d89",
 								"exec": [
 									"",
 									"var jsonData = pm.response.json();",
@@ -156,10 +148,6 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": ""
-						},
 						"url": {
 							"raw": "{{rb_url}}/booking?lastname={{lastname}}",
 							"host": [
@@ -184,7 +172,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "f90c42c7-9bf8-42c4-942d-e4ae5cbabef1",
+								"id": "916fdd99-a279-4d95-8d94-e4e42852d3af",
 								"exec": [
 									""
 								],
@@ -194,7 +182,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "74cc0f85-d34c-4e5c-b9f9-41dd90417f83",
+								"id": "81ddb281-2929-410f-bf21-e2ebcde4d24c",
 								"exec": [
 									"",
 									"var jsonData = pm.response.json();",
@@ -219,10 +207,6 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": ""
-						},
 						"url": {
 							"raw": "{{rb_url}}/booking?firstname={{firstname}}&lastname={{lastname}}",
 							"host": [
@@ -246,77 +230,12 @@
 					"response": []
 				},
 				{
-					"name": "Search By Checkin",
-					"event": [
-						{
-							"listen": "prerequest",
-							"script": {
-								"id": "f90c42c7-9bf8-42c4-942d-e4ae5cbabef1",
-								"exec": [
-									""
-								],
-								"type": "text/javascript"
-							}
-						},
-						{
-							"listen": "test",
-							"script": {
-								"id": "74cc0f85-d34c-4e5c-b9f9-41dd90417f83",
-								"exec": [
-									"",
-									"var jsonData = pm.response.json();",
-									"",
-									"pm.test(\"Response is not empty\", function () {",
-									"    pm.expect(jsonData).to.not.have.lengthOf(0);",
-									"});",
-									"",
-									"// use lodash map to get a flat array of all the returned booking ids",
-									"// https://lodash.com/docs/4.17.11#map",
-									"var booking_ids = _.map(jsonData, 'bookingid');",
-									"console.log(booking_ids);",
-									"",
-									"// the id for our newly created object should be there",
-									"pm.test(\"Expected booking id is in the returned array\", function () {",
-									"    pm.expect(booking_ids).to.include(pm.variables.get(\"booking_id\"));",
-									"});",
-									""
-								],
-								"type": "text/javascript"
-							}
-						}
-					],
-					"request": {
-						"method": "GET",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": ""
-						},
-						"url": {
-							"raw": "{{rb_url}}/booking?checkin={{checkin}}",
-							"host": [
-								"{{rb_url}}"
-							],
-							"path": [
-								"booking"
-							],
-							"query": [
-								{
-									"key": "checkin",
-									"value": "{{checkin}}"
-								}
-							]
-						}
-					},
-					"response": []
-				},
-				{
 					"name": "Search By Checkout",
 					"event": [
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "f90c42c7-9bf8-42c4-942d-e4ae5cbabef1",
+								"id": "ddeebc6c-d70f-4eb6-8b5b-1e46fabba13d",
 								"exec": [
 									""
 								],
@@ -326,7 +245,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "74cc0f85-d34c-4e5c-b9f9-41dd90417f83",
+								"id": "e085f17e-740f-48af-8564-742ac4df5083",
 								"exec": [
 									"",
 									"var jsonData = pm.response.json();",
@@ -352,10 +271,6 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": ""
-						},
 						"url": {
 							"raw": "{{rb_url}}/booking?checkout={{checkout}}",
 							"host": [
@@ -380,7 +295,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "8b187d98-662c-48ae-9e5d-ed529ef45d12",
+								"id": "07f91017-5c06-46b0-ad37-aac749a20eb4",
 								"exec": [
 									"var jsonData = pm.response.json();",
 									"",
@@ -395,10 +310,6 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": ""
-						},
 						"url": {
 							"raw": "{{rb_url}}/booking?firstname=non_existent_name",
 							"host": [
@@ -422,7 +333,7 @@
 				{
 					"listen": "prerequest",
 					"script": {
-						"id": "eac3a568-9f07-486c-8969-cc852363f656",
+						"id": "d4cb5456-b413-4999-ba76-ff160e238c42",
 						"type": "text/javascript",
 						"exec": [
 							"",
@@ -445,7 +356,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "90ac4d0a-93bd-4468-810b-5f23ce7945f7",
+						"id": "063f198b-8e57-4a4c-ae2c-62287dc0ffc6",
 						"type": "text/javascript",
 						"exec": [
 							"pm.test(\"Status code is 200\", function () {",
@@ -467,7 +378,8 @@
 						]
 					}
 				}
-			]
+			],
+			"protocolProfileBehavior": {}
 		},
 		{
 			"name": "Get Booking by ID",
@@ -478,7 +390,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "c4d895d9-1886-4369-819e-92688aad5e88",
+								"id": "e36fea27-be16-405d-a42f-3f397f2acf02",
 								"exec": [
 									"const createBooking = {",
 									"  url: pm.environment.get(\"rb_url\") + \"/booking\",",
@@ -501,7 +413,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "1728438e-328c-406c-93d8-b32cba372079",
+								"id": "4d45033e-b771-442f-b8dd-e0c7b51c700a",
 								"exec": [
 									"pm.test(\"Status code is 200\", function () {",
 									"    pm.response.to.have.status(200);",
@@ -519,10 +431,6 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": ""
-						},
 						"url": {
 							"raw": "{{rb_url}}/booking/{{booking_id}}",
 							"host": [
@@ -542,7 +450,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "15fc9672-7ee2-4c7a-9346-0637f73faaa5",
+								"id": "fe4454d0-b2da-47b3-8ebe-83ebb368b65f",
 								"exec": [
 									"pm.test(\"Status code is 404\", function () {",
 									"    pm.response.to.have.status(\"Not Found\")",
@@ -555,10 +463,6 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": ""
-						},
 						"url": {
 							"raw": "{{rb_url}}/booking/0",
 							"host": [
@@ -572,7 +476,8 @@
 					},
 					"response": []
 				}
-			]
+			],
+			"protocolProfileBehavior": {}
 		},
 		{
 			"name": "Create Booking",
@@ -583,7 +488,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "b4381f93-9575-411f-a03e-e23a586a5db8",
+								"id": "9e0ffe19-077a-467a-923f-9dad85e1cc04",
 								"exec": [
 									"pm.test(\"Status code is 200\", function () {",
 									"    pm.response.to.have.status(200);",
@@ -634,7 +539,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "b4381f93-9575-411f-a03e-e23a586a5db8",
+								"id": "1ff29b5d-d33d-41b0-8b85-ade36614f802",
 								"exec": [
 									"pm.test(\"Create fails\", function () {",
 									"    pm.response.to.not.have.success;",
@@ -669,7 +574,8 @@
 					},
 					"response": []
 				}
-			]
+			],
+			"protocolProfileBehavior": {}
 		},
 		{
 			"name": "Modify Booking",
@@ -680,7 +586,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "8038a405-e8b2-42f0-a30e-68bfe1fcbfd8",
+								"id": "ab3fe546-116d-48e3-9d11-dff843009d9b",
 								"exec": [
 									"// create the base booking",
 									"const createBooking = {",
@@ -708,7 +614,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "fc46bdbf-a724-43ae-80f9-2b1251bfc890",
+								"id": "8c2284fc-68a4-4890-9899-6c83b51dc208",
 								"exec": [
 									"pm.test(\"Status code is 200\", function () {",
 									"    pm.response.to.have.status(200);",
@@ -794,7 +700,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "8038a405-e8b2-42f0-a30e-68bfe1fcbfd8",
+								"id": "cd82032e-0feb-452b-89b4-5f9db61417f4",
 								"exec": [
 									"// create the base booking",
 									"const createBooking = {",
@@ -818,7 +724,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "fc46bdbf-a724-43ae-80f9-2b1251bfc890",
+								"id": "56bd4023-53b1-4a01-8521-c4497c57de16",
 								"exec": [
 									"pm.test(\"Update fails\", function () {",
 									"    pm.response.to.not.have.success;",
@@ -883,104 +789,9 @@
 						}
 					},
 					"response": []
-				},
-				{
-					"name": "Update Invalid Date",
-					"event": [
-						{
-							"listen": "prerequest",
-							"script": {
-								"id": "8038a405-e8b2-42f0-a30e-68bfe1fcbfd8",
-								"exec": [
-									"// create the base booking",
-									"const createBooking = {",
-									"  url: pm.environment.get(\"rb_url\") + \"/booking\",",
-									"  method: 'POST',",
-									"  header: 'Content-Type:application/json',",
-									"  body: {",
-									"    mode: 'raw',",
-									"    raw: JSON.stringify(pm.variables.get(\"new_booking\"))",
-									"  }",
-									"};",
-									"pm.sendRequest(createBooking, function (err, res) {",
-									"    pm.expect(err).is.null;",
-									"    pm.variables.set(\"booking_id\", res.json().bookingid)",
-									"});",
-									""
-								],
-								"type": "text/javascript"
-							}
-						},
-						{
-							"listen": "test",
-							"script": {
-								"id": "fc46bdbf-a724-43ae-80f9-2b1251bfc890",
-								"exec": [
-									"pm.test(\"Update fails\", function () {",
-									"    pm.response.to.not.have.success;",
-									"});",
-									"",
-									"pm.sendRequest(pm.environment.get(\"rb_url\") + \"/booking/\" + pm.variables.get(\"booking_id\"), function (err, res) {",
-									"  if (err) { console.log(err); }",
-									"  pm.test('Booking is unchanged', function () {",
-									"    pm.expect(err).to.equal(null);",
-									"    pm.expect(res.text()).to.include(pm.variables.get(\"firstname\"));",
-									"  });",
-									"});"
-								],
-								"type": "text/javascript"
-							}
-						}
-					],
-					"request": {
-						"auth": {
-							"type": "basic",
-							"basic": [
-								{
-									"key": "password",
-									"value": "password123",
-									"type": "string"
-								},
-								{
-									"key": "username",
-									"value": "admin",
-									"type": "string"
-								}
-							]
-						},
-						"method": "PUT",
-						"header": [
-							{
-								"key": "Content-Type",
-								"value": "application/json"
-							},
-							{
-								"key": "Accept",
-								"value": "application/json"
-							},
-							{
-								"key": "Cookie",
-								"value": "token=abc123"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n    \"firstname\" : \"{{firstname}}\",\n    \"lastname\" : \"{{lastname}}\",\n    \"totalprice\" : {{totalprice}},\n    \"depositpaid\" : {{depositpaid}},\n    \"bookingdates\" : {\n        \"checkin\" : \"2019-12-32\",\n        \"checkout\" : \"{{checkout}}\"\n    },\n    \"additionalneeds\" : \"{{additionalneeds}}\"\n}"
-						},
-						"url": {
-							"raw": "{{rb_url}}/booking/{{booking_id}}",
-							"host": [
-								"{{rb_url}}"
-							],
-							"path": [
-								"booking",
-								"{{booking_id}}"
-							]
-						}
-					},
-					"response": []
 				}
-			]
+			],
+			"protocolProfileBehavior": {}
 		},
 		{
 			"name": "Patch Modify Booking",
@@ -991,7 +802,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "d41d9c0c-c456-4394-aff2-71ca18fe5dcd",
+								"id": "f30d5d58-c2e4-4d30-930e-5d38ed634d8a",
 								"exec": [
 									"// create the base booking",
 									"const createBooking = {",
@@ -1019,7 +830,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "f306c460-57fc-4ab6-bd34-6bbe86ac1d97",
+								"id": "df2c7108-f3bb-4177-b6c1-56e722e3ce40",
 								"exec": [
 									"pm.test(\"Status code is 200\", function () {",
 									"    pm.response.to.have.status(200);",
@@ -1085,103 +896,9 @@
 						}
 					},
 					"response": []
-				},
-				{
-					"name": "Invalid Patch",
-					"event": [
-						{
-							"listen": "prerequest",
-							"script": {
-								"id": "d41d9c0c-c456-4394-aff2-71ca18fe5dcd",
-								"exec": [
-									"// create the base booking",
-									"const createBooking = {",
-									"  url: pm.environment.get(\"rb_url\") + \"/booking\",",
-									"  method: 'POST',",
-									"  header: 'Content-Type:application/json',",
-									"  body: {",
-									"    mode: 'raw',",
-									"    raw: JSON.stringify(pm.variables.get(\"new_booking\"))",
-									"  }",
-									"};",
-									"pm.sendRequest(createBooking, function (err, res) {",
-									"    pm.expect(err).is.null;",
-									"    pm.variables.set(\"booking_id\", res.json().bookingid)",
-									"});"
-								],
-								"type": "text/javascript"
-							}
-						},
-						{
-							"listen": "test",
-							"script": {
-								"id": "f306c460-57fc-4ab6-bd34-6bbe86ac1d97",
-								"exec": [
-									"pm.test(\"Patch fails\", function () {",
-									"    pm.response.to.not.have.success;",
-									"});",
-									"",
-									"pm.sendRequest(pm.environment.get(\"rb_url\") + \"/booking/\" + pm.variables.get(\"booking_id\"), function (err, res) {",
-									"  if (err) { console.log(err); }",
-									"  pm.test('Booking is unchanged', function () {",
-									"    pm.expect(err).to.equal(null);",
-									"    pm.expect(res.text()).to.include(pm.variables.get(\"firstname\"));",
-									"  });",
-									"});"
-								],
-								"type": "text/javascript"
-							}
-						}
-					],
-					"request": {
-						"auth": {
-							"type": "basic",
-							"basic": [
-								{
-									"key": "password",
-									"value": "password123",
-									"type": "string"
-								},
-								{
-									"key": "username",
-									"value": "admin",
-									"type": "string"
-								}
-							]
-						},
-						"method": "PATCH",
-						"header": [
-							{
-								"key": "Content-Type",
-								"value": "application/json"
-							},
-							{
-								"key": "Accept",
-								"value": "application/json"
-							},
-							{
-								"key": "Cookie",
-								"value": "token=abc123"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n    \"firstname\" : null,\n    \"lastname\" : \"{{lastname}}\"\n}"
-						},
-						"url": {
-							"raw": "{{rb_url}}/booking/{{booking_id}}",
-							"host": [
-								"{{rb_url}}"
-							],
-							"path": [
-								"booking",
-								"{{booking_id}}"
-							]
-						}
-					},
-					"response": []
 				}
-			]
+			],
+			"protocolProfileBehavior": {}
 		},
 		{
 			"name": "Ping",
@@ -1189,7 +906,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "63b6f724-102f-4d03-8675-f30f5f3a988b",
+						"id": "a86f9455-bce9-4c13-a01f-9e15b1ba638e",
 						"exec": [
 							"pm.test(\"Ping is successful\", function () {",
 							"    pm.response.to.be.success;",
@@ -1202,10 +919,6 @@
 			"request": {
 				"method": "GET",
 				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": ""
-				},
 				"url": {
 					"raw": "{{rb_url}}/ping",
 					"host": [
@@ -1224,7 +937,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "cd2ebd72-b117-48c1-aaea-eb85c0c8753c",
+						"id": "ce81169f-26f4-47f5-beaf-af8fef00fd14",
 						"exec": [
 							"pm.test(\"Status code is 200\", function () {",
 							"    pm.response.to.have.status(200);",
@@ -1269,7 +982,7 @@
 				{
 					"listen": "prerequest",
 					"script": {
-						"id": "d27455dc-a367-4d1f-890f-f5fea189d0ff",
+						"id": "042747de-c02a-4cbe-a627-f40e62f35951",
 						"exec": [
 							"// create the base booking",
 							"const createBooking = {",
@@ -1292,10 +1005,10 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "6057ab1f-a1bc-4186-bfab-4d0cd2d6ff9f",
+						"id": "d7f2f659-fc7a-4464-aff5-0f971c2969eb",
 						"exec": [
-							"pm.test(\"Status code is 200\", function () {",
-							"    pm.response.to.have.status(200);",
+							"pm.test(\"Status code is 201\", function () {",
+							"    pm.response.to.have.status(201);",
 							"});",
 							"",
 							"",
@@ -1338,7 +1051,6 @@
 						"value": "token=abc123"
 					}
 				],
-				"body": {},
 				"url": {
 					"raw": "{{rb_url}}/booking/{{booking_id}}",
 					"host": [
@@ -1357,7 +1069,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "858f0d4e-0d8a-4587-a962-f5d8f2446884",
+				"id": "db45823a-c24f-48e2-9d9b-7702178f73ae",
 				"type": "text/javascript",
 				"exec": [
 					"// top names of 1996",
@@ -1411,14 +1123,13 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "da1316f6-9655-441e-bd27-8abc3715f398",
+				"id": "373804b5-2127-44a9-ae25-7b4c0fadfa74",
 				"type": "text/javascript",
 				"exec": [
 					""
 				]
 			}
 		}
-	]
+	],
+	"protocolProfileBehavior": {}
 }
-
-
