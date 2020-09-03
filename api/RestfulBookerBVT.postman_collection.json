@@ -885,7 +885,7 @@
 					"var checkout = checkin.add(\"days\", _.random(1, 14));",
 					"pm.variables.set(\"checkout\", checkout.format(\"YYYY-MM-DD\"));",
 					"",
-					"var needs = [\"breakfast\", \"lunch\", \"early checkin\", \"late checkout\", null];",
+					"var needs = [\"breakfast\", \"lunch\", \"early checkin\", \"late checkout\"];",
 					"pm.variables.set(\"additionalneeds\", needs[_.random(needs.length-1)]);",
 					"",
 					"// put all the selected variables into a new booking object and save to a variable",
